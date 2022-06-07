@@ -1,0 +1,35 @@
+﻿form {
+  width:500px;
+ align-items: center;
+ margin-left: auto;
+ margin-right: auto;
+
+}
+label{
+  width:150px;
+  padding:5px;
+  margin:2px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: medium;
+  
+}
+input{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  color: rgb(51, 40, 3);
+  background-color: #f9dab2;
+  width:20px;
+  margin-bottom: 10px;
+}
+input:focus{
+  background-color:#ffffff98;
+}
+fieldset{
+  border: 3px dotted #55442c;
+  border-radius:15px;
+  
+  
+}
+button{
+  
+}

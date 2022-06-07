@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <title>Strona Główna</title>
+    <style>
+        h1,h2{
+            color:#ffffff;
+            
+            text-align:center;
+        }
+       
+        
+    </style>
+    <link href="Układ2.css" rel="stylesheet" type"text/css" />
+    <link href="formularz.css" rel="stylesheet"/>
+
+</head> 
+<body>
+    
+    <nav>
+        
+        
+      <ul>
+        <li><a href="index.html">Strona Główna</a></li>
+        <li><a href="https://www.onedirectionmusic.com/gb/home.html"target="_blank">
+          Oficjalna strona</a></li>
+        <li><a href="artykul.html">Historia</a></li>
+        <li><a href="strona1.html">The BRIT Choice Awards</a></li>
+        <li><a href="strona2.html">Vogue</a></li>
+        <li><a href="strona3.html">X-Factor</a></li>
+        <li><a href="Tabela_JS.html">Tabelka</a></li>
+        <li><a href="formularz.html">Formularz</a></li>
+        <li><a href="Canvas1.html">CANVAS</a></li>
+        <li><a href="map.html">MAP</a></li>
+        <li><a href="prezentacja.html">Prezentacja</a></li>
+        <li><a href="przelicznik.html">Przelicznik</a></li>
+        
+
+      </ul>
+    </nav>
+    <article>
+        <h2>Formularz</h2>
+        
+        <form action="mailto:maria.skupien@student.put.poznan.pl"
+              method="post">
+            <p>Pola oznaczone <em>*</em> są wymagane</p>
+
+            <fieldset>
+                <legend> Dane kontaktowe</legend>
+            <label for="imie"> Imię<em>*</em>:</label>
+            <input type="text" name="imie" id="imie"
+                   placeholder="Jan" required /> <br />
+
+            <label for="nazw">Nazwisko<em>*</em>:</label>
+            <input type="text" name="nazw" id="nazw" placeholder="Kowalski"required /> <br />
+
+            <label for=" tel"> Numer Telefonu<em>*</em></label>
+            <input type="text" name="tel" id="tel"
+                   placeholder="789034567" required /> <br />
+
+            <label for="email"> E-Mail<em>*</em></label>
+            <input type="email" name="email" id="email" 
+                   placeholder="jan.kowalski@gmail.com" required /> <br />
+            </fieldset>
+            
+            <fieldset>
+                <legend>Przedział wiekowy</legend>
+                <input type="radio" name="wiek" id="wiek" value="0-10" /> 0-10 <br />
+                <input type="radio" name="wiek" id="wiek" value="11-15" /> 11-15 <br />
+                <input type="radio" name="wiek" id="wiek" value="16-20" /> 16-20 <br />
+                <input type="radio" name="wiek" id="wiek" value="21-30" /> 21-30 <br />
+                <input type="radio" name="wiek" id="wiek" value="31-40" /> 31-40 <br />
+                <input type="radio" name="wiek" id="wiek" value=">40" /> >40 <br />
+            </fieldset>
+            <fieldset>
+                <legend>Ulubiony członek zespołu</legend>
+                <input  name="przegladarka" list="przegladarka"/>
+                <datalist id="przegladarka">
+                    <option value="Harry Styles">Harry Styles</option>
+                    <option value="Niall Horan">Niall Horan</option>
+                    <option value="Liam Payne">Liam Payne</option>
+                    <option value="Louis Tomlinson">Louis Tomlinson</option>
+                    <option value="Zayn Malik">Zayn Malik</option>
+                </datalist>
+            </fieldset>
+            <fieldset>
+                <legend>Ulubiona płyta</legend>
+                <label><input type="checkbox" name="Up All Night" /> Up All Night </label> <br />
+                <label><input type="checkbox" name="Take Me Home" /> Take Me Home </label> <br />
+                <label><input type="checkbox" name="Midnight Memories" /> Midnight Memories </label> <br />
+                <label><input type="checkbox" name="Four" /> Four </label> <br />
+                <label><input type="checkbox" name="Made in the A.M." /> Made in the A.M. </label> <br />
+            </fieldset>
+            <fieldset>
+                <legend>Czy byłaś/-eś kiedykolwiek na koncercie One Direction</legend>
+                <input type="radio" name="wiek" id="wiek" value="TAK" /> TAK <br />
+                <input type="radio" name="wiek" id="wiek" value="NIE" /> NIE <br />
+            
+            </fieldset>
+            <fieldset>
+                <legend>Jeśli tak to na której trasie</legend>
+                <input  name="przegladarka" list="przegladarka"/>
+                <datalist id="przegladarka">
+                    <option value="The X Factor Tour(2011)">The X Factor Tour(2011)</option>
+                    <option value="Up All Night Tour (2011–2012)">Up All Night Tour (2011–2012)</option>
+                    <option value="Take Me Home Tour (2013)">Take Me Home Tour (2013)</option>
+                    <option value="Where We Are Tour (2014)">Where We Are Tour (2014)</option>
+                    <option value="On The Road Again Tour (2015)">On The Road Again Tour (2015)</option>
+                </datalist>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Pliki i opinia </legend>
+                <label for="file">Prześlij swoje ulubione zdjęcie związane z 1D</label>
+                <input type="file" id="file" /> <br/>
+                
+                <label for="">Opis</label> <br/>
+                <textarea cols="40" rows="10" placeholder="Opisz wybrane zdjęcie"></textarea>
+            </fieldset>
+            <p>
+                <input type="submit" value="Wyślij formularz"/>
+                <input type="reset" value="Kasuj formularz"/>
+            </p>
+        </form>
+    </article> 
+  
+    <div class="footer">
+        <div class="footer-content">
+              <div class="footer-section about">
+                <p>Autor: Maria Skupień</p>
+                <p>Nr albumu: 149386</p>
+               <div class="mail">
+                <a href="mailto:maria.skupien@student.put.poznan.pl" >maria.skupien@student.put.poznan.pl</a>
+               </div>
+              </div>
+              <div class="footer-section zegar&data">
+                  <p> AKTUALNA DATA & GODZINA</p>
+                 <div id="clock" class="clock"></div>
+                 <script src = "Zegarek.js"> </script>
+                 <div id="date" class="clock"></div>
+                 <script src="Zegarek.js"></script>
+              </div>
+              
+          
+              <div class="footer-section licznik">
+                <div class="website-counter"></div>
+                    <script src="licznik.js"></script>
+              </div>
+      
+      </div>
+  </div>
+  
+  
+</body>
+</html>

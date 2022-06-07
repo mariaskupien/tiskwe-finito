@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <title>Strona Główna</title>
+    <style>
+        h1, h2 {
+            color: #78f687;
+            background-color: #184214;
+            text-align: center;
+        }
+    </style>
+    <link href="Układ2.css" rel="stylesheet" type"text /css" />
+    <style>
+        canvas{
+            background-color: white;
+            border: 1px dashed red;
+        }
+    </style>
+    <script>
+        var can, cont;
+        window.onload = function(){
+            can = document.getElementById("plotno");
+         
+        }
+
+        function rysuj1d() {
+           
+            if (cont == null) {
+                cont=can.getContext("2d");
+            }
+            cont.beginPath(); 
+            cont.lineWidth = 30;
+            cont.strokeStyle = "pink";
+            cont.lineCap = "round"; //"square" "butt"
+            cont.moveTo(80, 100);
+            cont.lineTo(120, 70);
+            cont.lineTo(120, 250);
+            cont.stroke();
+            cont.beginPath(); 
+            cont.lineWidth = 30;
+            cont.strokeStyle = "pink";
+            cont.lineCap = "round"; //"square" "butt"
+            cont.moveTo(200, 250);
+            cont.lineTo(200, 70);
+            cont.arc(200, 150, 100, 1.5*Math.PI, 0.5*Math.PI);
+            
+            
+            cont.stroke();
+
+           
+        }
+
+        function czysc() {
+            cont.clearRect(0, 0, can.width, can.height);
+        }
+
+    </script>
+</head> 
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Strona Główna</a></li>
+            <li><a href="https://www.onedirectionmusic.com/gb/home.html"target="_blank">
+              Oficjalna strona</a></li>
+            <li><a href="artykul.html">Historia</a></li>
+            <li><a href="stronka1.html">The BRIT Choice Awards</a></li>
+            <li><a href="strona2.html">Vogue</a></li>
+            <li><a href="strona3.html">X-Factor</a></li>
+            <li><a href="Tabela_JS.html">Tabelka</a></li>
+            <li><a href="formularz.html">Formularz</a></li>
+            <li><a href="Canvas1.html">CANVAS</a></li>
+            <li><a href="map.html">MAP</a></li>
+            <li><a href="prezentacja.html">Prezentacja</a></li>
+            <li><a href="przelicznik.html">Przelicznik</a></li>
+            
+  
+          </ul>
+    </nav>
+    <article>
+        
+        <input type="button" value="Rysuj logo One Direction" onclick="rysuj1d()" />
+        <input type="button" value="Czyść wykres" onclick="czysc()" />
+        <br/>
+        <canvas id="plotno" width="500" height="300"></canvas>
+
+
+    </article>
+    <div class="footer">
+        <div class="footer-content">
+              <div class="footer-section about">
+                <p>Autor: Maria Skupień</p>
+                <p>Nr albumu: 149386</p>
+               <div class="mail">
+                <a href="mailto:maria.skupien@student.put.poznan.pl" >maria.skupien@student.put.poznan.pl</a>
+               </div>
+              </div>
+              <div class="footer-section zegar&data">
+                  <p> AKTUALNA DATA & GODZINA</p>
+                 <div id="clock" class="clock"></div>
+                 <script src = "Zegarek.js"> </script>
+                 <div id="date" class="clock"></div>
+                 <script src="Zegarek.js"></script>
+              </div>
+              
+          
+            <div class="footer-section licznik">
+              <div class="website-counter"></div>
+                  <script src="licznik.js"></script>
+            </div>
+      
+      </div>
+  </div>
+</body>
+</html>
